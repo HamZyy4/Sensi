@@ -5,7 +5,7 @@ ui_print() {
 }
 
 # Kode Key
-KEY="sukitovone"
+KEY="sukitovooe"
 
 # // array & PATH
 API=$(getprop ro.build.version.sdk )
