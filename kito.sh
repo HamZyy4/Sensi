@@ -4,9 +4,6 @@ ui_print() {
   echo "$1"
 }
 
-# Kode Key
-KEY="sukitovooe"
-
 # // array & PATH
 API=$(getprop ro.build.version.sdk )
 NAME="Sensi | @rxysettings"
@@ -48,7 +45,7 @@ sleep 0.2
 
 # // Check Android API
 if [ $API -ge 30 ]; then
-    echo "[ ! ] Currently"
+    echo "[ ! ] Menginstall"
 else
     echo "[ ! ] Unsupported API Version: $API" && exit 1
 fi
@@ -107,7 +104,7 @@ sync # Sync to data in the rare case a device crashes
 sleep 2
 ui_print "[ - ] All Done"
 ui_print
-sleep 4.5
+sleep 4
 open
 #
 # Credits
